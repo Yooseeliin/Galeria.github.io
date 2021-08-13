@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, rgba(55,241,255,1) 0%, rgba(3,12,12,1) 47%, rgba(234,0,255,0.8208695652173913) 100%);
+
+}
+/*syle for header*/
+header {
+    border-radius: 19px 50px 50px 50px;
+    background: radial-gradient(circle, rgba(201,252,255,1) 0%, rgba(252,168,229,1) 38%, rgba(174,178,255,1) 65%, rgba(177,254,239,1) 100%);
+    margin: 10px;
+    text-align: center;
+}
+/*style for header*/
+header>h1{
+    font-size: 60px;
+    font-family:'Leckerli One', fantasy;
+    text-decoration: underline 3px rgb(255, 20, 177);
+}
+
+header>h2{
+    font-size: 30px;
+    font-family:'Atma',fantasy;
+    text-transform: capitalize;
+    word-spacing: 5px;
+   }
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*.content {
+    display: flex;
+    flex-wrap: wrap;
+}*/
+
+img{
+    width: 100%;
+    filter: sepia(25%);
+    transition-property: all;
+    transition-duration:4000ms;
+}
+
+img:hover{
+    filter:grayscale(100%);
+    transform:rotate(360deg);
+}
+.column{
+    flex: 25%;
+    max-width: 25%;
+    padding: 6px;
+}
+
+/*
+@media screen and (max-width:1000px) {
+    .column {
+        flex:33.33%;
+        max-width:33.33%;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .column {
+        flex: 50%;
+        max-width:50%;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+*/
